@@ -1,5 +1,3 @@
-
-const listbox = document.querySelector(".list-items")
 const heading = document.querySelector("h2")
 const cleaerButton = document.querySelector("button")
 const items = document.querySelectorAll("li")
@@ -28,5 +26,7 @@ cleaerButton.addEventListener("click", () => [
     items.forEach((e) => {
         e.classList.remove("clicked")
     })
+    selected = 0
+    heading.textContent = `Selected Items :${selected}`
 ])
 
