@@ -22,11 +22,11 @@ items.forEach((e) => {
 
 
 
-cleaerButton.addEventListener("click", () => [
+cleaerButton.addEventListener("click", () => {
     items.forEach((e) => {
         e.classList.remove("clicked")
     })
     selected = 0
     heading.textContent = `Selected Items :${selected}`
-])
+})
 
